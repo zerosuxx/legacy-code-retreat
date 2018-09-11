@@ -1,7 +1,11 @@
 <?php
 
+require __DIR__ . '/GameRunner.php';
+
 use App\Categories;
 use App\Category;
+
+
 
 $categories = new Categories();
 $categories->addCategory(new Category('Pop', [0, 4, 8], 1));
@@ -13,4 +17,4 @@ foreach(['Pop', 'Science', 'Sports', 'Rock'] as $category) {
         $categories->addQuestion($category, new \App\Question($category . ' Question ' . $i));
     }
 }
-return $categories;
+(new GameRunner())->run($categories);

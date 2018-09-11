@@ -7,9 +7,9 @@ class GameRunner
 {
     private $notAWinner;
 
-    public function run()
+    public function run(\App\Categories $categories)
     {
-        $aGame = new Game(require 'game.config.php');
+        $aGame = new Game($categories);
 
         $aGame->add("Chet");
         $aGame->add("Pat");
@@ -26,5 +26,3 @@ class GameRunner
         } while ($this->notAWinner);
     }
 }
-
-(new GameRunner())->run();

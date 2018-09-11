@@ -14,13 +14,13 @@ class Game {
 
     var $currentPlayer = 0;
     var $isGettingOutOfPenaltyBox;
+
     /**
      * @var Categories
      */
     private $categories;
 
     function  __construct(Categories $categories){
-
         $this->players = array();
         $this->places = array(0);
         $this->purses  = array(0);
@@ -48,7 +48,7 @@ class Game {
         return count($this->players);
     }
 
-    function  roll($roll) {
+    function roll($roll) {
         echoln($this->players[$this->currentPlayer] . " is the current player");
         echoln("They have rolled a " . $roll);
 
@@ -84,7 +84,7 @@ class Game {
 
     }
 
-    function  askQuestion() {
+    function askQuestion() {
         $question = $this->categories->nextQuestionByCategoryName($this->currentCategory());
         echoln($question->getName());
     }
