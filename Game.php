@@ -64,7 +64,7 @@ class Game
 
     function roll($roll)
     {
-        echoln($this->getCurrentPlayer()->getName() . " is the current player");
+        echoln($this->getCurrentPlayerName() . " is the current player");
         echoln("They have rolled a " . $roll);
 
         if ($this->getCurrentPlayer()->isInPenaltyBox()) {
@@ -74,10 +74,10 @@ class Game
                 } else if($this->version === 2) {
                     $this->getCurrentPlayer()->setInPenaltyBox(false);
                 }
-                echoln($this->getCurrentPlayer()->getName() . " is getting out of the penalty box");
+                echoln($this->getCurrentPlayerName() . " is getting out of the penalty box");
                 $this->changePlayerPlace($roll);
 
-                echoln($this->getCurrentPlayer()->getName()
+                echoln($this->getCurrentPlayerName()
                     . "'s new location is "
                     . $this->getCurrentPlayer()->getPlace());
                 echoln("The category is " . $this->currentCategory());
@@ -86,13 +86,13 @@ class Game
                 if($this->version === 1) {
                     $this->isOutOfPenaltyBox = false;
                 }
-                echoln($this->getCurrentPlayer()->getName() . " is not getting out of the penalty box");
+                echoln($this->getCurrentPlayerName() . " is not getting out of the penalty box");
             }
 
         } else {
             $this->changePlayerPlace($roll);
 
-            echoln($this->getCurrentPlayer()->getName()
+            echoln($this->getCurrentPlayerName()
                 . "'s new location is "
                 . $this->getCurrentPlayer()->getPlace());
             echoln("The category is " . $this->currentCategory());
@@ -132,7 +132,7 @@ class Game
     function wrongAnswer()
     {
         echoln("Question was incorrectly answered");
-        echoln($this->getCurrentPlayer()->getName() . " was sent to the penalty box");
+        echoln($this->getCurrentPlayerName() . " was sent to the penalty box");
         $this->getCurrentPlayer()->setInPenaltyBox(true);
 
         $this->currentPlayer++;
@@ -145,7 +145,13 @@ class Game
 
     function didPlayerWin()
     {
-        return !($this->getCurrentPlayer()->getPurseAmount() == 6);
+        $isWin = !($this->getCurrentPlayer()->getPurseAmount() == 6);
+        if($isWin) {
+            echoln('------KICKED ' . $this->getCurrentPlayerName());
+            array_splice($this->players, $this->currentPlayer, 1);
+            $this->currentPlayer = 0;
+        }
+        return $isWin;
     }
 
     private function isWin(): bool
@@ -153,7 +159,7 @@ class Game
         echoln("Answer was correct!!!!");
         $point = $this->categories->getCategoryByPlace($this->getCurrentPlayer()->getPlace())->getPoint();
         $this->getCurrentPlayer()->setPurseAmount($this->getCurrentPlayer()->getPurseAmount() + $point);
-        echoln($this->getCurrentPlayer()->getName()
+        echoln($this->getCurrentPlayerName()
             . " now has "
             . $this->getCurrentPlayer()->getPurseAmount()
             . " Gold Coins.");
@@ -170,6 +176,11 @@ class Game
     private function getCurrentPlayer()
     {
         return $this->players[$this->currentPlayer];
+    }
+
+    private function getCurrentPlayerName()
+    {
+        return $this->getCurrentPlayer()->getName();
     }
 
     /**
