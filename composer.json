@@ -16,5 +16,8 @@
         "psr-4": {
             "Test\\": "test/Unit/"
         }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --testdox --coverage-html coverage --coverage-clover clover.xml"
     }
 }
