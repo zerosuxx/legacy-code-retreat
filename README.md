@@ -3,8 +3,8 @@
 ## Feladat 1
 
 - Konfiguralhato legyen milyen kerdes kartegoriak lehessenek
-- Kerdesekhez pontot lehessen rendeni
-- Scient tipusu kerdesek 2 ponton erjenek
+- Kerdes kategoriakhoz pontot lehessen rendelni
+- Science kategoriaju kerdesek 2 goldot erjenek
 - 5 es 9 mezon history legyen
 
 ##### Tilos a refactor es test!
