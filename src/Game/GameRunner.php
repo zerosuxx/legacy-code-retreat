@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Game;
+
 use App\Categories;
 use App\Player;
 

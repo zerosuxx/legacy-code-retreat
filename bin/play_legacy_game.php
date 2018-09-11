@@ -1,9 +1,11 @@
 <?php
 
-require_once __DIR__ . '/vendor/autoload.php';
+require_once dirname(__DIR__) . '/vendor/autoload.php';
 
 use App\Categories;
 use App\Category;
+use App\Game\Game;
+use App\Game\GameRunner;
 use App\Question;
 
 if(!isset($version)) {
