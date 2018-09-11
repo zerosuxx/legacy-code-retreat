@@ -6,9 +6,9 @@ class GameRunner
 {
     private $notAWinner;
 
-    public function run(Categories $categories, array $players)
+    public function run(Categories $categories, array $players, int $version = 1)
     {
-        $aGame = new Game($categories);
+        $aGame = new Game($categories, $version);
 
         foreach($players as $player) {
             $aGame->add($player);

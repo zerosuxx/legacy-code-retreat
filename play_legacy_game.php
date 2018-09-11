@@ -20,4 +20,9 @@ $players = [
     'Pat',
     'Sue'
 ];
-(new GameRunner())->run($categories, $players);
+
+if(!isset($version)) {
+    $version = 1;
+}
+
+(new GameRunner())->run($categories, $players, (int)$version);
