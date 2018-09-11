@@ -85,7 +85,7 @@ class Game {
     }
 
     function  askQuestion() {
-        $question = $this->categories->getQuestionByCategoryName($this->currentCategory());
+        $question = $this->categories->nextQuestionByCategoryName($this->currentCategory());
         echoln($question->getName());
     }
 
@@ -97,7 +97,7 @@ class Game {
         if ($this->inPenaltyBox[$this->currentPlayer]){
             if ($this->isGettingOutOfPenaltyBox) {
                 echoln("Answer was correct!!!!");
-                $point = $this->categories->getLastCategory()->getPoint();
+                $point = $this->categories->getCategoryByPlace($this->places[$this->currentPlayer])->getPoint();
                 $this->purses[$this->currentPlayer] += $point;
                 echoln($this->players[$this->currentPlayer]
                     . " now has "
