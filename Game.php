@@ -69,7 +69,7 @@ class Game
             if ($roll % 2 != 0) {
                 if ($this->version === self::VERSION_DEFAULT) {
                     $this->isOutOfPenaltyBox = true;
-                } elseif ($this->version === self::VERSION_KICK_AND_ADD) {
+                } elseif ($this->version === self::VERSION_IMPROVED) {
                     $this->getCurrentPlayer()->setInPenaltyBox(false);
                 }
                 $this->log($this->getCurrentPlayerName() . " is getting out of the penalty box");

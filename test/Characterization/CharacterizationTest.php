@@ -27,7 +27,6 @@ class CharacterizationTest extends TestCase
      */
     public function v2_OriginalAndActualFilesAreEquals()
     {
-        $this->markTestIncomplete();
         $version = 2;
         foreach (range(1, 10) as $seed) {
             $this->generateTestFiles('original', $version, $seed);
