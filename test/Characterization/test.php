@@ -1,6 +1,6 @@
 <?php
 
-class TestCase
+class CharacterizationTestCase
 {
 
     public function run($tests = 10)
@@ -10,7 +10,7 @@ class TestCase
             $success = $this->test($i);
             echo $success ? '.' : 'E';
         }
-        if($success) {
+        if ($success) {
             echo "\n\033[1;32mOK ({$tests} tests)\033[0m\n";
         } else {
             echo "\n\033[1;41mERROR ({$tests} tests)\033[0m\n";
@@ -22,10 +22,10 @@ class TestCase
         return assert(file_get_contents($file1) === file_get_contents($file2), 'Two file are not equals!');
     }
 
-    public function test($seed, $captureFile = 'test_capture.php')
+    public function test($seed, $captureFile = __DIR__.'/test_capture.php')
     {
-        $originalPath = 'test/original/';
-        $actualPath = 'test/actual/';
+        $originalPath = __DIR__ . '/original/';
+        $actualPath = __DIR__ . '/actual/';
 
         $filename = sprintf('game_%d.txt', $seed);
 
@@ -34,5 +34,5 @@ class TestCase
     }
 }
 
-$test = new TestCase();
+$test = new CharacterizationTestCase();
 $test->run();
