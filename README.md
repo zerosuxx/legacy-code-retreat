@@ -1,6 +1,7 @@
 # legacy-code-retreat
 
-[![Build Status](https://travis-ci.com/zerosuxx/legacy-code-retreat.svg?branch=master)](https://travis-ci.com/zerosuxx/legacy-code-retreat)
+[![Build Status](https://travis-ci.com/zerosuxx/legacy-code-retreat.svg?branch=some_features)](https://travis-ci.com/zerosuxx/legacy-code-retreat)
+[![Coverage Status](https://coveralls.io/repos/github/zerosuxx/legacy-code-retreat/badge.svg?branch=some_features)](https://coveralls.io/github/zerosuxx/legacy-code-retreat?branch=some_features)
 
 ## Feladat 1
 
