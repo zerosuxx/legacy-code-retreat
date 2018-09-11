@@ -1,0 +1,4 @@
+.idea/
+vendor/
+test/Characterization/actual/
+clover.xml
