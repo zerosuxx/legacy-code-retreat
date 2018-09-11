@@ -8,7 +8,7 @@ class TestCase
         $success = true;
         for ($i = 1; $i <= $tests; $i++) {
             $success = $this->test($i);
-            echo '.';
+            echo $success ? '.' : 'E';
         }
         if($success) {
             echo "\n\033[1;32mOK ({$tests} tests)\033[0m\n";
