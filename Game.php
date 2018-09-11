@@ -12,11 +12,6 @@ class Game {
     var $purses ;
     var $inPenaltyBox ;
 
-    var $popQuestions;
-    var $scienceQuestions;
-    var $sportsQuestions;
-    var $rockQuestions;
-
     var $currentPlayer = 0;
     var $isGettingOutOfPenaltyBox;
     /**
@@ -31,22 +26,7 @@ class Game {
         $this->purses  = array(0);
         $this->inPenaltyBox  = array(0);
 
-        $this->popQuestions = array();
-        $this->scienceQuestions = array();
-        $this->sportsQuestions = array();
-        $this->rockQuestions = array();
-
-        for ($i = 0; $i < 50; $i++) {
-            array_push($this->popQuestions, "Pop Question " . $i);
-            array_push($this->scienceQuestions, ("Science Question " . $i));
-            array_push($this->sportsQuestions, ("Sports Question " . $i));
-            array_push($this->rockQuestions, $this->createRockQuestion($i));
-        }
         $this->categories = $categories;
-    }
-
-    function createRockQuestion($index){
-        return "Rock Question " . $index;
     }
 
     function isPlayable() {
@@ -105,25 +85,20 @@ class Game {
     }
 
     function  askQuestion() {
-        if ($this->currentCategory() == "Pop")
-            echoln(array_shift($this->popQuestions));
-        if ($this->currentCategory() == "Science")
-            echoln(array_shift($this->scienceQuestions));
-        if ($this->currentCategory() == "Sports")
-            echoln(array_shift($this->sportsQuestions));
-        if ($this->currentCategory() == "Rock")
-            echoln(array_shift($this->rockQuestions));
+        $question = $this->categories->getQuestionByCategoryName($this->currentCategory());
+        echoln($question->getName());
     }
 
     function currentCategory() {
-        return $this->categories->getCategoryByPlace($this->places[$this->currentPlayer])[0];
+        return $this->categories->getCategoryByPlace($this->places[$this->currentPlayer])->getName();
     }
 
     function wasCorrectlyAnswered() {
         if ($this->inPenaltyBox[$this->currentPlayer]){
             if ($this->isGettingOutOfPenaltyBox) {
                 echoln("Answer was correct!!!!");
-                $this->purses[$this->currentPlayer]++;
+                $point = $this->categories->getLastCategory()->getPoint();
+                $this->purses[$this->currentPlayer] += $point;
                 echoln($this->players[$this->currentPlayer]
                     . " now has "
                     .$this->purses[$this->currentPlayer]
