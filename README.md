@@ -7,5 +7,18 @@
 - Science kategoriaju kerdesek 2 goldot erjenek
 - 5 es 9 mezon history legyen
 
-##### Tilos a refactor es test!
+## Feladat 2
 
+- elöző feladat csak külön komponensbe tdd-vel
+
+## Feladat 3
+
+- penaltybox bug javítása (ki/be kapcsolható legyen (v1/v2))
+
+## Feladat 4
+
+- player osztály
+
+## Feladat 5
+
+- a nyert játékos kitörlése és új játékos berakása
