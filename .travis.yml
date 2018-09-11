@@ -4,6 +4,7 @@ php:
 
 before_script:
   - composer install
+  - composer update
 
 script:
   - composer test
