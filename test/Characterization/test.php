@@ -13,7 +13,7 @@ class CharacterizationTestCase
         if ($success) {
             echo "\n\033[1;32mOK ({$tests} tests)\033[0m\n";
         } else {
-            echo "\n\033[1;41mERROR ({$tests} tests)\033[0m\n";
+            echo "\n\033[1;41mERROR\033[0m\n";
         }
     }
 
