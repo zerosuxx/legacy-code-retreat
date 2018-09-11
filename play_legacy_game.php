@@ -1,11 +1,9 @@
 <?php
 
-require __DIR__ . '/GameRunner.php';
+require __DIR__ . '/vendor/autoload.php';
 
 use App\Categories;
 use App\Category;
-
-
 
 $categories = new Categories();
 $categories->addCategory(new Category('Pop', [0, 4, 8], 1));
@@ -17,4 +15,9 @@ foreach(['Pop', 'Science', 'Sports', 'Rock'] as $category) {
         $categories->addQuestion($category, new \App\Question($category . ' Question ' . $i));
     }
 }
-(new GameRunner())->run($categories);
+$players = [
+    'Chet',
+    'Pat',
+    'Sue'
+];
+(new GameRunner())->run($categories, $players);
