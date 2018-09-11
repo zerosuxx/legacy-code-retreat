@@ -10,6 +10,10 @@ function echoln($string)
 
 class Game
 {
+    const VERSION_DEFAULT = 1;
+    const VERSION_IMPROVED = 2;
+    const VERSION_KICK_AND_ADD = 3;
+
     /**
      * @var Player[]
      */
@@ -69,9 +73,9 @@ class Game
 
         if ($this->getCurrentPlayer()->isInPenaltyBox()) {
             if ($roll % 2 != 0) {
-                if($this->version === 1) {
+                if($this->version === self::VERSION_DEFAULT) {
                     $this->isOutOfPenaltyBox = true;
-                } else if($this->version === 2) {
+                } else if($this->version === self::VERSION_KICK_AND_ADD) {
                     $this->getCurrentPlayer()->setInPenaltyBox(false);
                 }
                 echoln($this->getCurrentPlayerName() . " is getting out of the penalty box");
@@ -83,7 +87,7 @@ class Game
                 echoln("The category is " . $this->currentCategory());
                 $this->askQuestion();
             } else {
-                if($this->version === 1) {
+                if($this->version === self::VERSION_DEFAULT) {
                     $this->isOutOfPenaltyBox = false;
                 }
                 echoln($this->getCurrentPlayerName() . " is not getting out of the penalty box");
@@ -146,7 +150,7 @@ class Game
     function didPlayerWin()
     {
         $isWin = !($this->getCurrentPlayer()->getPurseAmount() == 6);
-        if($isWin) {
+        if($this->version === self::VERSION_KICK_AND_ADD && !$isWin) {
             echoln('------KICKED ' . $this->getCurrentPlayerName());
             array_splice($this->players, $this->currentPlayer, 1);
             $this->currentPlayer = 0;

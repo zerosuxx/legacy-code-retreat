@@ -25,11 +25,16 @@ class GameRunner
                 $playersCount = $aGame->howManyPlayers();
                 $this->notAWinner = $aGame->wasCorrectlyAnswered();
                 $newPlayersCount = $aGame->howManyPlayers();
-                if($playersCount !== $newPlayersCount) {
-                    $aGame->add(new Player('Random Jozsó ' . mt_rand(1, 1000)));
+                if($version === Game::VERSION_KICK_AND_ADD && $playersCount !== $newPlayersCount) {
+                    $aGame->add(new Player('Random Player ' . $iteration));
                 }
             }
-            $iteration++;
-        } while ($iteration !== 300);
+            if($version === Game::VERSION_KICK_AND_ADD) {
+                $iteration++;
+                if ($iteration === 300) {
+                    $this->notAWinner = false;
+                }
+            }
+        } while ($this->notAWinner);
     }
 }
