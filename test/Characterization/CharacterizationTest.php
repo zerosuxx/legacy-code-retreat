@@ -11,15 +11,7 @@ class CharacterizationTest extends TestCase
      */
     public function v1_OriginalAndActualFilesAreEquals()
     {
-        $version = 1;
-        foreach (range(1, 10) as $seed) {
-            $this->generateTestFiles('original', $version, $seed);
-            $this->generateTestFiles('actual', $version, $seed);
-            $this->assertFileEquals(
-                $this->getFilePath('original', $version, $seed),
-                $this->getFilePath('actual', $version, $seed)
-            );
-        }
+        $this->assertVersion(1);
     }
 
     /**
@@ -27,15 +19,7 @@ class CharacterizationTest extends TestCase
      */
     public function v2_OriginalAndActualFilesAreEquals()
     {
-        $version = 2;
-        foreach (range(1, 10) as $seed) {
-            $this->generateTestFiles('original', $version, $seed);
-            $this->generateTestFiles('actual', $version, $seed);
-            $this->assertFileEquals(
-                $this->getFilePath('original', $version, $seed),
-                $this->getFilePath('actual', $version, $seed)
-            );
-        }
+        $this->assertVersion(2);
     }
 
     /**
@@ -43,15 +27,7 @@ class CharacterizationTest extends TestCase
      */
     public function v3_OriginalAndActualFilesAreEquals()
     {
-        $version = 3;
-        foreach (range(1, 10) as $seed) {
-            $this->generateTestFiles('original', $version, $seed);
-            $this->generateTestFiles('actual', $version, $seed);
-            $this->assertFileEquals(
-                $this->getFilePath('original', $version, $seed),
-                $this->getFilePath('actual', $version, $seed)
-            );
-        }
+        $this->assertVersion(3);
     }
 
     /**
@@ -85,5 +61,20 @@ class CharacterizationTest extends TestCase
     private function getFilePath($directory, $version, $seed)
     {
         return __DIR__ . '/' . $directory . '/v' . $version . '/game_' . $seed . '.txt';
+    }
+
+    /**
+     * @param $version
+     */
+    private function assertVersion($version): void
+    {
+        foreach (range(1, 10) as $seed) {
+            $this->generateTestFiles('original', $version, $seed);
+            $this->generateTestFiles('actual', $version, $seed);
+            $this->assertFileEquals(
+                $this->getFilePath('original', $version, $seed),
+                $this->getFilePath('actual', $version, $seed)
+            );
+        }
     }
 }
