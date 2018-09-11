@@ -1,19 +1,18 @@
 <?php
 
-require __DIR__ . '/Game.php';
-require __DIR__ . '/vendor/autoload.php';
+use App\Categories;
 
 class GameRunner
 {
     private $notAWinner;
 
-    public function run(\App\Categories $categories)
+    public function run(Categories $categories, array $players)
     {
         $aGame = new Game($categories);
 
-        $aGame->add("Chet");
-        $aGame->add("Pat");
-        $aGame->add("Sue");
+        foreach($players as $player) {
+            $aGame->add($player);
+        }
 
         do {
             $aGame->roll(rand(0, 5) + 1);
