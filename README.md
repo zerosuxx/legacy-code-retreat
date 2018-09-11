@@ -1,5 +1,7 @@
 # legacy-code-retreat
 
+[![Build Status](https://travis-ci.com/zerosuxx/legacy-code-retreat.svg?branch=master)](https://travis-ci.com/zerosuxx/legacy-code-retreat)
+
 ## Feladat 1
 
 - Konfiguralhato legyen milyen kerdes kartegoriak lehessenek
