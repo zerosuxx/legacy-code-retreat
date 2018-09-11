@@ -6,7 +6,6 @@ class Categories
 {
     private $categoriesByPlace = [];
     private $questions = [];
-    private $lastCategoryName = null;
 
     public function addCategory(Category $category): void
     {
