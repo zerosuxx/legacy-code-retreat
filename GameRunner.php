@@ -11,7 +11,7 @@ class GameRunner
         $aGame = new Game($categories, $version);
 
         foreach($players as $player) {
-            $aGame->add($player);
+            $aGame->add(new \App\Player($player));
         }
 
         do {
