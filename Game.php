@@ -1,4 +1,7 @@
 <?php
+
+use App\Categories;
+
 function echoln($string) {
     echo $string."\n";
 }
@@ -16,8 +19,12 @@ class Game {
 
     var $currentPlayer = 0;
     var $isGettingOutOfPenaltyBox;
+    /**
+     * @var Categories
+     */
+    private $categories;
 
-    function  __construct(){
+    function  __construct(Categories $categories){
 
         $this->players = array();
         $this->places = array(0);
@@ -35,6 +42,7 @@ class Game {
             array_push($this->sportsQuestions, ("Sports Question " . $i));
             array_push($this->rockQuestions, $this->createRockQuestion($i));
         }
+        $this->categories = $categories;
     }
 
     function createRockQuestion($index){
@@ -107,18 +115,8 @@ class Game {
             echoln(array_shift($this->rockQuestions));
     }
 
-
     function currentCategory() {
-        if ($this->places[$this->currentPlayer] == 0) return "Pop";
-        if ($this->places[$this->currentPlayer] == 4) return "Pop";
-        if ($this->places[$this->currentPlayer] == 8) return "Pop";
-        if ($this->places[$this->currentPlayer] == 1) return "Science";
-        if ($this->places[$this->currentPlayer] == 5) return "Science";
-        if ($this->places[$this->currentPlayer] == 9) return "Science";
-        if ($this->places[$this->currentPlayer] == 2) return "Sports";
-        if ($this->places[$this->currentPlayer] == 6) return "Sports";
-        if ($this->places[$this->currentPlayer] == 10) return "Sports";
-        return "Rock";
+        return $this->categories->getCategoryByPlace($this->places[$this->currentPlayer])[0];
     }
 
     function wasCorrectlyAnswered() {
