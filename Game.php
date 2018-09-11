@@ -3,11 +3,6 @@
 use App\Categories;
 use App\Player;
 
-function echoln($string)
-{
-    echo $string . "\n";
-}
-
 class Game
 {
     const VERSION_DEFAULT = 1;
@@ -53,11 +48,10 @@ class Game
 
     function add(Player $player)
     {
-
         array_push($this->players, $player);
 
-        echoln($player->getName() . " was added");
-        echoln("They are player number " . count($this->players));
+        $this->log($player->getName() . " was added");
+        $this->log("They are player number " . count($this->players));
         return true;
     }
 
@@ -68,38 +62,38 @@ class Game
 
     function roll($roll)
     {
-        echoln($this->getCurrentPlayerName() . " is the current player");
-        echoln("They have rolled a " . $roll);
+        $this->log($this->getCurrentPlayerName() . " is the current player");
+        $this->log("They have rolled a " . $roll);
 
         if ($this->getCurrentPlayer()->isInPenaltyBox()) {
             if ($roll % 2 != 0) {
-                if($this->version === self::VERSION_DEFAULT) {
+                if ($this->version === self::VERSION_DEFAULT) {
                     $this->isOutOfPenaltyBox = true;
-                } else if($this->version === self::VERSION_KICK_AND_ADD) {
+                } elseif ($this->version === self::VERSION_KICK_AND_ADD) {
                     $this->getCurrentPlayer()->setInPenaltyBox(false);
                 }
-                echoln($this->getCurrentPlayerName() . " is getting out of the penalty box");
+                $this->log($this->getCurrentPlayerName() . " is getting out of the penalty box");
                 $this->changePlayerPlace($roll);
 
-                echoln($this->getCurrentPlayerName()
+                $this->log($this->getCurrentPlayerName()
                     . "'s new location is "
                     . $this->getCurrentPlayer()->getPlace());
-                echoln("The category is " . $this->currentCategory());
+                $this->log("The category is " . $this->currentCategory());
                 $this->askQuestion();
             } else {
-                if($this->version === self::VERSION_DEFAULT) {
+                if ($this->version === self::VERSION_DEFAULT) {
                     $this->isOutOfPenaltyBox = false;
                 }
-                echoln($this->getCurrentPlayerName() . " is not getting out of the penalty box");
+                $this->log($this->getCurrentPlayerName() . " is not getting out of the penalty box");
             }
 
         } else {
             $this->changePlayerPlace($roll);
 
-            echoln($this->getCurrentPlayerName()
+            $this->log($this->getCurrentPlayerName()
                 . "'s new location is "
                 . $this->getCurrentPlayer()->getPlace());
-            echoln("The category is " . $this->currentCategory());
+            $this->log("The category is " . $this->currentCategory());
             $this->askQuestion();
         }
 
@@ -108,7 +102,7 @@ class Game
     function askQuestion()
     {
         $question = $this->categories->nextQuestionByCategoryName($this->currentCategory());
-        echoln($question->getName());
+        $this->log($question->getName());
     }
 
     function currentCategory()
@@ -119,7 +113,7 @@ class Game
     function wasCorrectlyAnswered()
     {
         if ($this->getCurrentPlayer()->isInPenaltyBox()) {
-            if($this->isOutOfPenaltyBox) {
+            if ($this->isOutOfPenaltyBox) {
                 return $this->isWin();
             } else {
                 $this->currentPlayer++;
@@ -135,8 +129,8 @@ class Game
 
     function wrongAnswer()
     {
-        echoln("Question was incorrectly answered");
-        echoln($this->getCurrentPlayerName() . " was sent to the penalty box");
+        $this->log("Question was incorrectly answered");
+        $this->log($this->getCurrentPlayerName() . " was sent to the penalty box");
         $this->getCurrentPlayer()->setInPenaltyBox(true);
 
         $this->currentPlayer++;
@@ -150,8 +144,8 @@ class Game
     function didPlayerWin()
     {
         $isWin = !($this->getCurrentPlayer()->getPurseAmount() == 6);
-        if($this->version === self::VERSION_KICK_AND_ADD && !$isWin) {
-            echoln('------KICKED ' . $this->getCurrentPlayerName());
+        if ($this->version === self::VERSION_KICK_AND_ADD && !$isWin) {
+            $this->log('------KICKED ' . $this->getCurrentPlayerName());
             array_splice($this->players, $this->currentPlayer, 1);
             $this->currentPlayer = 0;
         }
@@ -160,10 +154,10 @@ class Game
 
     private function isWin(): bool
     {
-        echoln("Answer was correct!!!!");
+        $this->log("Answer was correct!!!!");
         $point = $this->categories->getCategoryByPlace($this->getCurrentPlayer()->getPlace())->getPoint();
         $this->getCurrentPlayer()->setPurseAmount($this->getCurrentPlayer()->getPurseAmount() + $point);
-        echoln($this->getCurrentPlayerName()
+        $this->log($this->getCurrentPlayerName()
             . " now has "
             . $this->getCurrentPlayer()->getPurseAmount()
             . " Gold Coins.");
@@ -196,5 +190,10 @@ class Game
         if ($this->getCurrentPlayer()->getPlace() > 11) {
             $this->getCurrentPlayer()->setPlace($this->getCurrentPlayer()->getPlace() - 12);
         }
+    }
+
+    private function log($string)
+    {
+        echo $string . "\n";
     }
 }
