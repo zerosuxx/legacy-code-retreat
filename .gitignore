@@ -1,4 +1,4 @@
 .idea/
 vendor/
-test/Characterization/actual/
+coverage/
 clover.xml
