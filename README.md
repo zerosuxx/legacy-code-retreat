@@ -24,4 +24,4 @@
 
 ## Feladat 5
 
-- a nyert játékos kitörlése és új játékos berakása
+- a nyert játékos kitörlése és új játékos berakása (v3(
