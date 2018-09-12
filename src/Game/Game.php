@@ -3,6 +3,9 @@
 namespace App\Game;
 
 use App\Categories;
+use App\Logger\BufferedLogger;
+use App\Logger\LoggerInterface;
+use App\Logger\StdoutLogger;
 use App\Player;
 
 class Game
@@ -36,16 +39,25 @@ class Game
      */
     private $version;
 
-    function __construct(Categories $categories, int $version)
+    /**
+     * @var BufferedLogger
+     */
+    private $logger;
+
+    function __construct(Categories $categories, int $version = self::VERSION_DEFAULT, LoggerInterface $logger = null)
     {
         $this->players = [];
         $this->categories = $categories;
         $this->version = $version;
+        $this->logger = $logger ?: new StdoutLogger();
     }
 
-    function isPlayable()
+    /**
+     * @return int
+     */
+    public function getVersion(): int
     {
-        return ($this->howManyPlayers() >= 2);
+        return $this->version;
     }
 
     function add(Player $player)
@@ -118,10 +130,7 @@ class Game
             if ($this->isOutOfPenaltyBox) {
                 return $this->isWin();
             } else {
-                $this->currentPlayer++;
-                if ($this->currentPlayer == count($this->players)) {
-                    $this->currentPlayer = 0;
-                }
+                $this->nextPlayer();
                 return true;
             }
         } else {
@@ -135,10 +144,7 @@ class Game
         $this->log($this->getCurrentPlayerName() . " was sent to the penalty box");
         $this->getCurrentPlayer()->setInPenaltyBox(true);
 
-        $this->currentPlayer++;
-        if ($this->currentPlayer == count($this->players)) {
-            $this->currentPlayer = 0;
-        }
+        $this->nextPlayer();
         return true;
     }
 
@@ -147,9 +153,9 @@ class Game
     {
         $isWin = !($this->getCurrentPlayer()->getPurseAmount() == 6);
         if ($this->version === self::VERSION_KICK_AND_ADD && !$isWin) {
-            $this->log('------KICKED ' . $this->getCurrentPlayerName());
+            $this->log('--- v' . self::VERSION_KICK_AND_ADD . ' kicked: ' . $this->getCurrentPlayerName());
             array_splice($this->players, $this->currentPlayer, 1);
-            $this->currentPlayer = 0;
+            $isWin = true;
         }
         return $isWin;
     }
@@ -165,10 +171,7 @@ class Game
             . " Gold Coins.");
 
         $winner = $this->didPlayerWin();
-        $this->currentPlayer++;
-        if ($this->currentPlayer == count($this->players)) {
-            $this->currentPlayer = 0;
-        }
+        $this->nextPlayer();
 
         return $winner;
     }
@@ -196,6 +199,14 @@ class Game
 
     private function log($string)
     {
-        echo $string . "\n";
+        $this->logger->log($string . "\n");
+    }
+
+    private function nextPlayer(): void
+    {
+        $this->currentPlayer++;
+        if ($this->currentPlayer >= count($this->players)) {
+            $this->currentPlayer = 0;
+        }
     }
 }
