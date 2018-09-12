@@ -1,0 +1,641 @@
+Chet was added
+They are player number 1
+Pat was added
+They are player number 2
+Sue was added
+They are player number 3
+Chet is the current player
+They have rolled a 1
+Chet's new location is 1
+The category is Science
+Science Question 0
+Question was incorrectly answered
+Chet was sent to the penalty box
+Pat is the current player
+They have rolled a 6
+Pat's new location is 6
+The category is Sports
+Sports Question 0
+Answer was correct!!!!
+Pat now has 1 Gold Coins.
+Sue is the current player
+They have rolled a 3
+Sue's new location is 3
+The category is Rock
+Rock Question 0
+Answer was correct!!!!
+Sue now has 1 Gold Coins.
+Chet is the current player
+They have rolled a 1
+Chet is getting out of the penalty box
+Chet's new location is 2
+The category is Sports
+Sports Question 1
+Answer was correct!!!!
+Chet now has 1 Gold Coins.
+Pat is the current player
+They have rolled a 3
+Pat's new location is 9
+The category is Science
+Science Question 1
+Answer was correct!!!!
+Pat now has 2 Gold Coins.
+Sue is the current player
+They have rolled a 1
+Sue's new location is 4
+The category is Pop
+Pop Question 0
+Answer was correct!!!!
+Sue now has 2 Gold Coins.
+Chet is the current player
+They have rolled a 6
+Chet's new location is 8
+The category is Pop
+Pop Question 1
+Answer was correct!!!!
+Chet now has 2 Gold Coins.
+Pat is the current player
+They have rolled a 4
+Pat's new location is 1
+The category is Science
+Science Question 2
+Answer was correct!!!!
+Pat now has 3 Gold Coins.
+Sue is the current player
+They have rolled a 2
+Sue's new location is 6
+The category is Sports
+Sports Question 2
+Question was incorrectly answered
+Sue was sent to the penalty box
+Chet is the current player
+They have rolled a 3
+Chet's new location is 11
+The category is Rock
+Rock Question 1
+Answer was correct!!!!
+Chet now has 3 Gold Coins.
+Pat is the current player
+They have rolled a 5
+Pat's new location is 6
+The category is Sports
+Sports Question 3
+Answer was correct!!!!
+Pat now has 4 Gold Coins.
+Sue is the current player
+They have rolled a 2
+Sue is not getting out of the penalty box
+Chet is the current player
+They have rolled a 2
+Chet's new location is 1
+The category is Science
+Science Question 3
+Answer was correct!!!!
+Chet now has 4 Gold Coins.
+Pat is the current player
+They have rolled a 5
+Pat's new location is 11
+The category is Rock
+Rock Question 2
+Answer was correct!!!!
+Pat now has 5 Gold Coins.
+Sue is the current player
+They have rolled a 4
+Sue is not getting out of the penalty box
+Chet is the current player
+They have rolled a 6
+Chet's new location is 7
+The category is Rock
+Rock Question 3
+Answer was correct!!!!
+Chet now has 5 Gold Coins.
+Pat is the current player
+They have rolled a 3
+Pat's new location is 2
+The category is Sports
+Sports Question 4
+Answer was correct!!!!
+Pat now has 6 Gold Coins.
+--- v3 kicked: Pat
+Random Player 1 was added
+They are player number 3
+Chet is the current player
+They have rolled a 1
+Chet's new location is 8
+The category is Pop
+Pop Question 2
+Answer was correct!!!!
+Chet now has 6 Gold Coins.
+--- v3 kicked: Chet
+Random Player 2 was added
+They are player number 3
+Random Player 1 is the current player
+They have rolled a 6
+Random Player 1's new location is 6
+The category is Sports
+Sports Question 5
+Answer was correct!!!!
+Random Player 1 now has 1 Gold Coins.
+Random Player 2 is the current player
+They have rolled a 6
+Random Player 2's new location is 6
+The category is Sports
+Sports Question 6
+Answer was correct!!!!
+Random Player 2 now has 1 Gold Coins.
+Sue is the current player
+They have rolled a 1
+Sue is getting out of the penalty box
+Sue's new location is 7
+The category is Rock
+Rock Question 4
+Answer was correct!!!!
+Sue now has 3 Gold Coins.
+Random Player 1 is the current player
+They have rolled a 5
+Random Player 1's new location is 11
+The category is Rock
+Rock Question 5
+Question was incorrectly answered
+Random Player 1 was sent to the penalty box
+Random Player 2 is the current player
+They have rolled a 6
+Random Player 2's new location is 0
+The category is Pop
+Pop Question 3
+Answer was correct!!!!
+Random Player 2 now has 2 Gold Coins.
+Sue is the current player
+They have rolled a 2
+Sue's new location is 9
+The category is Science
+Science Question 4
+Answer was correct!!!!
+Sue now has 4 Gold Coins.
+Random Player 1 is the current player
+They have rolled a 3
+Random Player 1 is getting out of the penalty box
+Random Player 1's new location is 2
+The category is Sports
+Sports Question 7
+Answer was correct!!!!
+Random Player 1 now has 2 Gold Coins.
+Random Player 2 is the current player
+They have rolled a 3
+Random Player 2's new location is 3
+The category is Rock
+Rock Question 6
+Answer was correct!!!!
+Random Player 2 now has 3 Gold Coins.
+Sue is the current player
+They have rolled a 5
+Sue's new location is 2
+The category is Sports
+Sports Question 8
+Answer was correct!!!!
+Sue now has 5 Gold Coins.
+Random Player 1 is the current player
+They have rolled a 1
+Random Player 1's new location is 3
+The category is Rock
+Rock Question 7
+Answer was correct!!!!
+Random Player 1 now has 3 Gold Coins.
+Random Player 2 is the current player
+They have rolled a 2
+Random Player 2's new location is 5
+The category is Science
+Science Question 5
+Answer was correct!!!!
+Random Player 2 now has 4 Gold Coins.
+Sue is the current player
+They have rolled a 2
+Sue's new location is 4
+The category is Pop
+Pop Question 4
+Question was incorrectly answered
+Sue was sent to the penalty box
+Random Player 1 is the current player
+They have rolled a 1
+Random Player 1's new location is 4
+The category is Pop
+Pop Question 5
+Answer was correct!!!!
+Random Player 1 now has 4 Gold Coins.
+Random Player 2 is the current player
+They have rolled a 1
+Random Player 2's new location is 6
+The category is Sports
+Sports Question 9
+Answer was correct!!!!
+Random Player 2 now has 5 Gold Coins.
+Sue is the current player
+They have rolled a 1
+Sue is getting out of the penalty box
+Sue's new location is 5
+The category is Science
+Science Question 6
+Answer was correct!!!!
+Sue now has 6 Gold Coins.
+--- v3 kicked: Sue
+Random Player 3 was added
+They are player number 3
+Random Player 2 is the current player
+They have rolled a 6
+Random Player 2's new location is 0
+The category is Pop
+Pop Question 6
+Answer was correct!!!!
+Random Player 2 now has 6 Gold Coins.
+--- v3 kicked: Random Player 2
+Random Player 4 was added
+They are player number 3
+Random Player 1 is the current player
+They have rolled a 3
+Random Player 1's new location is 7
+The category is Rock
+Rock Question 8
+Question was incorrectly answered
+Random Player 1 was sent to the penalty box
+Random Player 3 is the current player
+They have rolled a 6
+Random Player 3's new location is 6
+The category is Sports
+Sports Question 10
+Answer was correct!!!!
+Random Player 3 now has 1 Gold Coins.
+Random Player 4 is the current player
+They have rolled a 3
+Random Player 4's new location is 3
+The category is Rock
+Rock Question 9
+Answer was correct!!!!
+Random Player 4 now has 1 Gold Coins.
+Random Player 1 is the current player
+They have rolled a 2
+Random Player 1 is not getting out of the penalty box
+Random Player 3 is the current player
+They have rolled a 4
+Random Player 3's new location is 10
+The category is Sports
+Sports Question 11
+Answer was correct!!!!
+Random Player 3 now has 2 Gold Coins.
+Random Player 4 is the current player
+They have rolled a 3
+Random Player 4's new location is 6
+The category is Sports
+Sports Question 12
+Answer was correct!!!!
+Random Player 4 now has 2 Gold Coins.
+Random Player 1 is the current player
+They have rolled a 1
+Random Player 1 is getting out of the penalty box
+Random Player 1's new location is 8
+The category is Pop
+Pop Question 7
+Answer was correct!!!!
+Random Player 1 now has 5 Gold Coins.
+Random Player 3 is the current player
+They have rolled a 4
+Random Player 3's new location is 2
+The category is Sports
+Sports Question 13
+Answer was correct!!!!
+Random Player 3 now has 3 Gold Coins.
+Random Player 4 is the current player
+They have rolled a 4
+Random Player 4's new location is 10
+The category is Sports
+Sports Question 14
+Answer was correct!!!!
+Random Player 4 now has 3 Gold Coins.
+Random Player 1 is the current player
+They have rolled a 3
+Random Player 1's new location is 11
+The category is Rock
+Rock Question 10
+Answer was correct!!!!
+Random Player 1 now has 6 Gold Coins.
+--- v3 kicked: Random Player 1
+Random Player 5 was added
+They are player number 3
+Random Player 4 is the current player
+They have rolled a 1
+Random Player 4's new location is 11
+The category is Rock
+Rock Question 11
+Answer was correct!!!!
+Random Player 4 now has 4 Gold Coins.
+Random Player 5 is the current player
+They have rolled a 3
+Random Player 5's new location is 3
+The category is Rock
+Rock Question 12
+Answer was correct!!!!
+Random Player 5 now has 1 Gold Coins.
+Random Player 3 is the current player
+They have rolled a 1
+Random Player 3's new location is 3
+The category is Rock
+Rock Question 13
+Answer was correct!!!!
+Random Player 3 now has 4 Gold Coins.
+Random Player 4 is the current player
+They have rolled a 3
+Random Player 4's new location is 2
+The category is Sports
+Sports Question 15
+Answer was correct!!!!
+Random Player 4 now has 5 Gold Coins.
+Random Player 5 is the current player
+They have rolled a 5
+Random Player 5's new location is 8
+The category is Pop
+Pop Question 8
+Question was incorrectly answered
+Random Player 5 was sent to the penalty box
+Random Player 3 is the current player
+They have rolled a 5
+Random Player 3's new location is 8
+The category is Pop
+Pop Question 9
+Answer was correct!!!!
+Random Player 3 now has 5 Gold Coins.
+Random Player 4 is the current player
+They have rolled a 5
+Random Player 4's new location is 7
+The category is Rock
+Rock Question 14
+Answer was correct!!!!
+Random Player 4 now has 6 Gold Coins.
+--- v3 kicked: Random Player 4
+Random Player 6 was added
+They are player number 3
+Random Player 3 is the current player
+They have rolled a 3
+Random Player 3's new location is 11
+The category is Rock
+Rock Question 15
+Answer was correct!!!!
+Random Player 3 now has 6 Gold Coins.
+--- v3 kicked: Random Player 3
+Random Player 7 was added
+They are player number 3
+Random Player 6 is the current player
+They have rolled a 4
+Random Player 6's new location is 4
+The category is Pop
+Pop Question 10
+Answer was correct!!!!
+Random Player 6 now has 1 Gold Coins.
+Random Player 7 is the current player
+They have rolled a 3
+Random Player 7's new location is 3
+The category is Rock
+Rock Question 16
+Answer was correct!!!!
+Random Player 7 now has 1 Gold Coins.
+Random Player 5 is the current player
+They have rolled a 4
+Random Player 5 is not getting out of the penalty box
+Random Player 6 is the current player
+They have rolled a 2
+Random Player 6's new location is 6
+The category is Sports
+Sports Question 16
+Answer was correct!!!!
+Random Player 6 now has 2 Gold Coins.
+Random Player 7 is the current player
+They have rolled a 2
+Random Player 7's new location is 5
+The category is Science
+Science Question 7
+Answer was correct!!!!
+Random Player 7 now has 2 Gold Coins.
+Random Player 5 is the current player
+They have rolled a 1
+Random Player 5 is getting out of the penalty box
+Random Player 5's new location is 9
+The category is Science
+Science Question 8
+Answer was correct!!!!
+Random Player 5 now has 2 Gold Coins.
+Random Player 6 is the current player
+They have rolled a 3
+Random Player 6's new location is 9
+The category is Science
+Science Question 9
+Answer was correct!!!!
+Random Player 6 now has 3 Gold Coins.
+Random Player 7 is the current player
+They have rolled a 5
+Random Player 7's new location is 10
+The category is Sports
+Sports Question 17
+Answer was correct!!!!
+Random Player 7 now has 3 Gold Coins.
+Random Player 5 is the current player
+They have rolled a 5
+Random Player 5's new location is 2
+The category is Sports
+Sports Question 18
+Answer was correct!!!!
+Random Player 5 now has 3 Gold Coins.
+Random Player 6 is the current player
+They have rolled a 5
+Random Player 6's new location is 2
+The category is Sports
+Sports Question 19
+Answer was correct!!!!
+Random Player 6 now has 4 Gold Coins.
+Random Player 7 is the current player
+They have rolled a 1
+Random Player 7's new location is 11
+The category is Rock
+Rock Question 17
+Question was incorrectly answered
+Random Player 7 was sent to the penalty box
+Random Player 5 is the current player
+They have rolled a 4
+Random Player 5's new location is 6
+The category is Sports
+Sports Question 20
+Answer was correct!!!!
+Random Player 5 now has 4 Gold Coins.
+Random Player 6 is the current player
+They have rolled a 1
+Random Player 6's new location is 3
+The category is Rock
+Rock Question 18
+Answer was correct!!!!
+Random Player 6 now has 5 Gold Coins.
+Random Player 7 is the current player
+They have rolled a 6
+Random Player 7 is not getting out of the penalty box
+Random Player 5 is the current player
+They have rolled a 4
+Random Player 5's new location is 10
+The category is Sports
+Sports Question 21
+Question was incorrectly answered
+Random Player 5 was sent to the penalty box
+Random Player 6 is the current player
+They have rolled a 6
+Random Player 6's new location is 9
+The category is Science
+Science Question 10
+Answer was correct!!!!
+Random Player 6 now has 6 Gold Coins.
+--- v3 kicked: Random Player 6
+Random Player 8 was added
+They are player number 3
+Random Player 5 is the current player
+They have rolled a 5
+Random Player 5 is getting out of the penalty box
+Random Player 5's new location is 3
+The category is Rock
+Rock Question 19
+Answer was correct!!!!
+Random Player 5 now has 5 Gold Coins.
+Random Player 7 is the current player
+They have rolled a 3
+Random Player 7 is getting out of the penalty box
+Random Player 7's new location is 2
+The category is Sports
+Sports Question 22
+Question was incorrectly answered
+Random Player 7 was sent to the penalty box
+Random Player 8 is the current player
+They have rolled a 2
+Random Player 8's new location is 2
+The category is Sports
+Sports Question 23
+Answer was correct!!!!
+Random Player 8 now has 1 Gold Coins.
+Random Player 5 is the current player
+They have rolled a 6
+Random Player 5's new location is 9
+The category is Science
+Science Question 11
+Answer was correct!!!!
+Random Player 5 now has 6 Gold Coins.
+--- v3 kicked: Random Player 5
+Random Player 9 was added
+They are player number 3
+Random Player 8 is the current player
+They have rolled a 4
+Random Player 8's new location is 6
+The category is Sports
+Sports Question 24
+Answer was correct!!!!
+Random Player 8 now has 2 Gold Coins.
+Random Player 9 is the current player
+They have rolled a 4
+Random Player 9's new location is 4
+The category is Pop
+Pop Question 11
+Answer was correct!!!!
+Random Player 9 now has 1 Gold Coins.
+Random Player 7 is the current player
+They have rolled a 6
+Random Player 7 is not getting out of the penalty box
+Random Player 8 is the current player
+They have rolled a 5
+Random Player 8's new location is 11
+The category is Rock
+Rock Question 20
+Question was incorrectly answered
+Random Player 8 was sent to the penalty box
+Random Player 9 is the current player
+They have rolled a 1
+Random Player 9's new location is 5
+The category is Science
+Science Question 12
+Answer was correct!!!!
+Random Player 9 now has 2 Gold Coins.
+Random Player 7 is the current player
+They have rolled a 4
+Random Player 7 is not getting out of the penalty box
+Random Player 8 is the current player
+They have rolled a 3
+Random Player 8 is getting out of the penalty box
+Random Player 8's new location is 2
+The category is Sports
+Sports Question 25
+Answer was correct!!!!
+Random Player 8 now has 3 Gold Coins.
+Random Player 9 is the current player
+They have rolled a 2
+Random Player 9's new location is 7
+The category is Rock
+Rock Question 21
+Answer was correct!!!!
+Random Player 9 now has 3 Gold Coins.
+Random Player 7 is the current player
+They have rolled a 3
+Random Player 7 is getting out of the penalty box
+Random Player 7's new location is 5
+The category is Science
+Science Question 13
+Answer was correct!!!!
+Random Player 7 now has 4 Gold Coins.
+Random Player 8 is the current player
+They have rolled a 1
+Random Player 8's new location is 3
+The category is Rock
+Rock Question 22
+Answer was correct!!!!
+Random Player 8 now has 4 Gold Coins.
+Random Player 9 is the current player
+They have rolled a 3
+Random Player 9's new location is 10
+The category is Sports
+Sports Question 26
+Answer was correct!!!!
+Random Player 9 now has 4 Gold Coins.
+Random Player 7 is the current player
+They have rolled a 4
+Random Player 7's new location is 9
+The category is Science
+Science Question 14
+Answer was correct!!!!
+Random Player 7 now has 5 Gold Coins.
+Random Player 8 is the current player
+They have rolled a 3
+Random Player 8's new location is 6
+The category is Sports
+Sports Question 27
+Answer was correct!!!!
+Random Player 8 now has 5 Gold Coins.
+Random Player 9 is the current player
+They have rolled a 2
+Random Player 9's new location is 0
+The category is Pop
+Pop Question 12
+Answer was correct!!!!
+Random Player 9 now has 5 Gold Coins.
+Random Player 7 is the current player
+They have rolled a 6
+Random Player 7's new location is 3
+The category is Rock
+Rock Question 23
+Question was incorrectly answered
+Random Player 7 was sent to the penalty box
+Random Player 8 is the current player
+They have rolled a 1
+Random Player 8's new location is 7
+The category is Rock
+Rock Question 24
+Question was incorrectly answered
+Random Player 8 was sent to the penalty box
+Random Player 9 is the current player
+They have rolled a 6
+Random Player 9's new location is 6
+The category is Sports
+Sports Question 28
+Answer was correct!!!!
+Random Player 9 now has 6 Gold Coins.
+--- v3 kicked: Random Player 9
+Random Player 10 was added
+They are player number 3
